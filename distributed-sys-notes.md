@@ -20,7 +20,7 @@ People are less finicky than computers, even if their interface is a little less
 
 Alright, here we go.
 
-#### Distributed systems are different because they fail often.
+#### 1. Distributed systems are different because they fail often.
 
 When asked what separates distributed systems from other fields of software engineering, the new engineer often cites latency, 
 believing that’s what makes distributed computation hard. But they’re wrong. What sets distributed systems engineering apart 
