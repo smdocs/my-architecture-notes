@@ -22,3 +22,11 @@ Similarly, data is converted, in this layer, from the form most convenient for e
 This layer is where all the details go. The Web is a detail. The database is a detail. We keep these things on the outside where they can do little harm.
 
 Also in this layer is any other adapter necessary to convert data from some external form, such as an external service, to the internal form used by the use cases and entities.
+What data crosses the boundaries.
+
+#### What data crosses boundaries? 
+Typically the data that crosses the boundaries is simple data structures. You can use basic structs or simple Data Transfer objects if you like. Or the data can simply be arguments in function calls. Or you can pack it into a hashmap, or construct it into an object. The important thing is that isolated, simple, data structures are passed across the boundaries. We don’t want to cheat and pass Entities or Database rows. We don’t want the data structures to have any kind of dependency that violates The Dependency Rule.
+
+For example, many database frameworks return a convenient data format in response to a query. We might call this a RowStructure. We don’t want to pass that row structure inwards across a boundary. That would violate The Dependency Rule because it would force an inner circle to know something about an outer circle.
+
+So when we pass data across a boundary, it is always in the form that is most convenient for the inner circle.
