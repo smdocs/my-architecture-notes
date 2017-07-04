@@ -1,10 +1,10 @@
 # Architecture Principles
 
-- Independent of Frameworks. The architecture does not depend on the existence of some library of feature laden software. This allows you to use such frameworks as tools, rather than having to cram your system into their limited constraints.
-- Testable. The business rules can be tested without the UI, Database, Web Server, or any other external element.
-- Independent of UI. The UI can change easily, without changing the rest of the system. A Web UI could be replaced with a console UI, for example, without changing the business rules.
-- Independent of Database. You can swap out Oracle or SQL Server, for Mongo, BigTable, CouchDB, or something else. Your business rules are not bound to the database.
-- Independent of any external agency. In fact your business rules simply don’t know anything at all about the outside world.
+- ***Independent of Frameworks***. The architecture does not depend on the existence of some library of feature laden software. This allows you to use such frameworks as tools, rather than having to cram your system into their limited constraints.
+- ***Testable*** The business rules can be tested without the UI, Database, Web Server, or any other external element.
+- ***Independent of UI*** The UI can change easily, without changing the rest of the system. A Web UI could be replaced with a console UI, for example, without changing the business rules.
+- ***Independent of Database*** You can swap out Oracle or SQL Server, for Mongo, BigTable, CouchDB, or something else. Your business rules are not bound to the database.
+- ***Independent of any external agency*** fact your business rules simply don’t know anything at all about the outside world.
 
 ![](https://8thlight.com/blog/assets/posts/2012-08-13-the-clean-architecture/CleanArchitecture-5c6d7ec787d447a81b708b73abba1680.jpg)
 
